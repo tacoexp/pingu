@@ -87,29 +87,29 @@ const VIDEOS = [
 ]
 
 const FILE_DOWNLOADS = [
-  'media/images/ptok.jpg',
-  'media/images/jaczup.jpg',
-  'media/images/jaczupme.jpg',
-  'media/images/ptoszek.jpg',
-  'media/images/ptakwspodniach.jpg',
-  'media/images/kichajacyptoszek.jpg',
-  'media/images/lubieptoszki.png',
-  'media/images/zimowyptoszek.jpeg', // added by @dan64iel
-  'media/images/zlyptok.jpeg', //added by @imzeme
-  'media/images/grubyptok.jpg', //added by @imzeme
-  'media/images/ptokzjajami.jpeg', //added by @MARECKIyt
-  'media/images/ptiszka.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingu.jpg',
+  'media/images/pingudance.gif',
+  'media/images/hark.png',
+  'media/images/mario.exe.png',
+  'media/images/nootnoot.png',
+  'media/images/FE.jpg',
 ]
 
 const PHRASES = [
-  'hello my name is ptoszek, lol',
-  'birds are funny lalalalalalalallalala',
-  'wgl co u cb bo u mn dbr',
-  'knuuurrr eksplozja',
-  'hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw',
+  'taco f.e bypas',
+  'weeegeeeeeee',
+  'jkbhvgcjrtdutfiyguhli',
+  '#iqmaxx',
+  'FE BYPASS',
   'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
-  'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak',
-  'eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo'
+  'nub',
+  'pinguing'
 ]
 
 const LOGOUT_SITES = {
@@ -302,7 +302,7 @@ function initParentWindow () {
       removeHelloMessage()
       rainbowThemeColor()
       animateUrlWithEmojis()
-      speak('To był błąd')
+      speak('fe bypas')
     }
   })
 }
@@ -740,8 +740,8 @@ function requestWebauthnAttestation () {
         // User:
         user: {
           id: new Uint8Array(16),
-          name: 'lolica@jaczup.me',
-          displayName: 'Ptoszek Jaczupa'
+          name: 'pingu@nootnoot.com',
+          displayName: 'pingus awesome secret email'
         },
 
         pubKeyCredParams: [{
