@@ -62,11 +62,11 @@ const ART = [
 ]
 
 const SEARCHES = [
-  'jshop',
-  'ptoszek',
-  'ptak',
-  'kanarek',
-  'jaczup'
+  'fe bypass download',
+  'tacoexp',
+  'rc7 download',
+  'harkinian',
+  'unmuteplayerrequest humanoidapplydescription OriginalSize fe bypass'
 ]
 
 const VIDEOS = [
