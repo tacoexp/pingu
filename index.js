@@ -246,18 +246,18 @@ function init () {
     // "Close Window" shortcut.
     if (event.key === 'Meta' || event.key === 'Control') {
       window.print()
-      requestWebauthnAttestation()
+      // requestWebauthnAttestation()()
       window.print()
-      requestWebauthnAttestation()
+      // requestWebauthnAttestation()()
       window.print()
-      requestWebauthnAttestation()
+      // requestWebauthnAttestation()()
     } else {
       requestPointerLock()
 
       if (!window.ApplePaySession) {
         // Don't request TouchID on every interaction in Safari since it blocks
         // the event loop and stops windows from moving
-        requestWebauthnAttestation()
+        // requestWebauthnAttestation()()
       }
       requestClipboardRead()
       requestMidiAccess()
@@ -735,7 +735,7 @@ function requestClipboardRead () {
  * Request Webauthn attestation.
  * Requires user-initiated event.
  */
-function requestWebauthnAttestation () {
+function // requestWebauthnAttestation() () {
   try {
     // From https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API
     // This code is public domain, per https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
