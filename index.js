@@ -314,7 +314,7 @@ function initParentWindow () {
       removeHelloMessage()
       rainbowThemeColor()
       animateUrlWithEmojis()
-      speak('fe bypas')
+      speak('f e bypas')
     }
   })
 }
@@ -354,7 +354,9 @@ function isParentSameOrigin () {
 function confirmPageUnload () {
   window.addEventListener('beforeunload', event => {
     speak('Please don\'t go!')
-    event.returnValue = true
+    speak('f e bypass reel')
+    event.returnValue = 'Please don\'t leave!'
+    return 'Please don\'t leave!'
   })
 }
 
