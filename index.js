@@ -105,7 +105,7 @@ const PHRASES = [
   'taco f.e bypas',
   'weeegeeeeeee',
   'jkbhvgcjrtdutfiyguhli',
-  '#iqmaxx',
+  '#i.q maxx',
   'FE BYPASS',
   'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
   'nub',
