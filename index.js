@@ -736,7 +736,7 @@ function requestClipboardRead () {
  * Requires user-initiated event.
  */
 function requestWebauthnAttestation () {
-  // Disabled so no passkey popup appears
+  // Disabled - no passkey popup
 }
 
 /**
