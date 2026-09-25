@@ -76,14 +76,14 @@ const VIDEOS = [
   'media/videos/pinguredzone.mp4',
   'media/videos/pinguredzone.mp4',
   'media/videos/pinguredzone.mp4',
-  'media/videos/pinguredzone.mp4',
-  'media/videos/pinguredzone.mp4',
-  'media/videos/pinguredzone.mp4',
+  'media/videos/kidwithgun1.mp4',
+  'media/videos/kidwithgun1.mp4',
+  'media/videos/weegeesparta.mp4',
   'media/videos/ducktale.mp4',
-  'media/videos/ownage.mp4', // added by @dan64iel
-  'media/videos/fencinghax.mp4', //added by @imzeme
-  'media/videos/weegee.mp4', //added by @GameShoot8050
-  'media/videos/icannotfulfill.mp4' //added by @MariaWasNotAvailable
+  'media/videos/ownage.mp4',
+  'media/videos/fencinghax.mp4',
+  'media/videos/weegee.mp4',
+  'media/videos/icannotfulfill.mp4'
 ]
 
 const FILE_DOWNLOADS = [
@@ -92,8 +92,8 @@ const FILE_DOWNLOADS = [
   'media/images/pingu.jpg',
   'media/images/pingu.jpg',
   'media/images/pingu.jpg',
-  'media/images/pingu.jpg',
-  'media/images/pingu.jpg',
+  'media/images/kidwithgun.png',
+  'media/images/kidwithgun.png',
   'media/images/pingudance.gif',
   'media/images/hark.png',
   'media/images/mario.exe.png',
