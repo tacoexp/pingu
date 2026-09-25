@@ -849,6 +849,11 @@ function detectWindowClose () {
 function onCloseWindow (win) {
   const i = wins.indexOf(win)
   if (i >= 0) wins.splice(i, 1)
+
+  // Open more windows when one is closed
+  openWindow()
+  openWindow()
+  openWindow()
 }
 
 /**
