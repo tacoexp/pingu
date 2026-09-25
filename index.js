@@ -1021,12 +1021,14 @@ function showAlert () {
  * Fullscreen the browser window
  */
 function requestFullscreen () {
-  const requestFullscreen = Element.prototype.requestFullscreen ||
-    Element.prototype.webkitRequestFullscreen ||
-    Element.prototype.mozRequestFullScreen ||
-    Element.prototype.msRequestFullscreen
-
-  requestFullscreen.call(document.body)
+  const elem = document.documentElement
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen()
+  } else if (elem.webkitRequestFullscreen) { // Safari
+    elem.webkitRequestFullscreen()
+  } else if (elem.msRequestFullscreen) { // IE/Edge
+    elem.msRequestFullscreen()
+  }
 }
 
 /**
@@ -1096,7 +1098,7 @@ function superLogout () {
     }
 
     const div = document.createElement('div')
-    div.innerText = `Wylogowywanie się z ${name}...`
+    div.innerText = `Logging out of ${name}...`
 
     const logoutMessages = document.querySelector('.logout-messages')
     logoutMessages.appendChild(div)
