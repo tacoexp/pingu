@@ -1,4 +1,5 @@
 /*
+Credits to the people below - tacoexp
   ptoszek.pl
   Powered by Jaczup
 
