@@ -244,30 +244,30 @@ function init () {
 
     // Capture key presses on the Command or Control keys, to interfere with the
     // "Close Window" shortcut.
-    if (event.key === 'Meta' || event.key === 'Control') {
-      window.print()
-      // requestWebauthnAttestation()
-      window.print()
-      // requestWebauthnAttestation()
-      window.print()
-      // requestWebauthnAttestation()
-    } else {
-      requestPointerLock()
+   if (event.key === 'Meta' || event.key === 'Control') {
+  window.print()
+  // requestWebauthnAttestation()
+  window.print()
+  // requestWebauthnAttestation()
+  window.print()
+  // requestWebauthnAttestation()
+} else {
+  requestPointerLock()
 
-      if (!window.ApplePaySession) {
-        // Don't request TouchID on every interaction in Safari since it blocks
-        // the event loop and stops windows from moving
-        // requestWebauthnAttestation()
-      }
-      requestClipboardRead()
-      requestMidiAccess()
-      requestBluetoothAccess()
-      requestUsbAccess()
-      requestSerialAccess()
-      requestHidAccess()
-      requestCameraAndMic()
-      requestFullscreen()
-    }
+  if (!window.ApplePaySession) {
+    // Don't request TouchID on every interaction in Safari since it blocks
+    // the event loop and stops windows from moving
+    // requestWebauthnAttestation()
+  }
+  requestClipboardRead()
+  requestMidiAccess()
+  requestBluetoothAccess()
+  requestUsbAccess()
+  requestSerialAccess()
+  requestHidAccess()
+  requestCameraAndMic()
+  requestFullscreen()
+}
   })
 }
 
