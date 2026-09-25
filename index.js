@@ -196,22 +196,12 @@ const isParentWindow = !isChildWindow
  */
 // Keep spawning more windows when mouse goes near the top
 // Spawn more windows when mouse goes near the top (but not too fast)
-let lastTopTrigger = 0
-
-document.addEventListener('mousemove', function (e) {
-  if (e.clientY < 18) {
-    const now = Date.now()
-    if (now - lastTopTrigger > 800) { // only every 0.8 seconds
-      lastTopTrigger = now
-      const fakeClick = new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-        view: window
-      })
-      document.body.dispatchEvent(fakeClick)
-    }
-  }
-})
+document.addEventListener('mousemove', function (e) { 
+ if (e.clientY < 18) {
+     const fakeClick = new MouseEvent('click', { bubbles: true, cancelable: 
+     true, view: window }) document.body.dispatchEvent(fakeClick)
+      }
+       })
 
 init()
 
