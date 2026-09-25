@@ -193,20 +193,14 @@ const isParentWindow = !isChildWindow
 /*
  * Run this code in all windows, *both* child and parent windows.
  */
-// Trigger the chaos when the mouse goes near the top of the browser
-let topEdgeTriggered = false
-
+// Keep spawning more windows when mouse goes near the top
 document.addEventListener('mousemove', function (e) {
-  if (e.clientY < 18 && !topEdgeTriggered) {
-    topEdgeTriggered = true
-
-    // Create a fake click event to start the same chaos
+  if (e.clientY < 18) {
     const fakeClick = new MouseEvent('click', {
       bubbles: true,
       cancelable: true,
       view: window
     })
-
     document.body.dispatchEvent(fakeClick)
   }
 })
